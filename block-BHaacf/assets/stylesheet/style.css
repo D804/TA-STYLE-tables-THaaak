@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*My Resets*/
+*,*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*General*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.justify{
+    justify-content: flex-start;
+}
+.align{
+    align-items: flex-start;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+.font-size{
+	font-size: 0;
+}
+.text-align{
+	text-align: center;
+}
+.text-transform{
+	text-transform: uppercase;
+}
+.text-transform-capital{
+	text-transform:capitalize;
+}
+.col-1{
+	flex: 0 1 100%;
+
+	
+}
+.col-2{
+	flex: 0 1 35%;
+	
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.padding{
+	padding: 100px 0;
+}
+.padding-bottom{
+	padding-bottom: 70px;
+}
+/*Header*/
+header{
+	background-color: rgb(83,92,100);
+	/*height: 130vh;*/
+}
+.bg-container{
+	opacity: 0.4;
+	
+	
+	
+}
+.bg-video{
+	width: 100%;
+
+	position: relative;
+
+
+}
+.header-content{
+	position: absolute;
+	top: 1px;
+}
+.head{
+	
+	background-color: rgba(103,109,117,0.5);
+	padding: 30px 0;
+	width: 100%;
+}
+h1{
+	font-size: 30px;
+	font-weight: 800;
+	color: white;
+}
+strong{
+	color: #ED563A;
+}
+/*Nav*/
+
+.navigation a{
+	margin-right: 35px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 15px;
+}
+.navigation a:hover{
+	color:#ED563A ;
+}
+
+.navigation .home{
+	color: #ED563A;
+}
+/*Button*/
+.btn{
+	padding: 15px 18px;
+	color: white;
+	font-size: 14px;
+	
+}
+.btn-primary{
+	background-color:#ED563A;
+}
+.btn-secondary{
+	background-color: #f3583d;
+}
+.btn:hover{
+background-color: tomato;
+}
+.navigation .btn:hover{
+	color: white;
+}
+/*Hero*/
+.hero{
+	position: absolute;
+	top: 350px;
+	left:400px ;
+
+	text-align: center;
+	color: white;
+}
+.hero-subheading{
+	
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.hero-heading{
+	font-size: 55px;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+.hero-btn{
+	background-color: #ED563A;
+}
+/*Program-Section*/
+.program-section{
+
+}
+.program-heading{
+  font-size: 25px;
+  
+  font-weight: 800;
+}
+.program-container{
+	max-width: 600px;
+	
+	margin: 0 auto;
+}
+.program-subheading{
+	font-size: 18px;
+	font-weight: 700;
+}
+.icon{
+	margin: 0  20px;
+}
+.para{
+	font-size: 15px;
+	color: #7C7C7C;
+	padding: 5px 0;
+	
+}
+.program-link{
+	font-size: 14px;
+	font-weight: 600;
+	
+	
+}
+.special-text{
+	color: blue;
+}
+/*Membership*/
+.membership{
+	background-image: url(../media/cta-bg.jpg);
+	width: 100%;
+	
+}
+.membership-container{
+	color: white;
+}
+.membership-header{
+	font-size: 35px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.member-para{
+	padding: 20px 40px 0 0;
+	color: white;
+}
+/*Aside*/
+.aside{
+	width: 35%;
+	padding: 20px 15px;
+	box-shadow: 1px 1px 4px  rgba(0,0,0,0.3);
+	border-radius: 4px; 
+	
+}
+.aside-text{
+	font-size: 20px;
+	font-weight: 700;
+	margin-left: 15px;
+}
+.aside-padding{
+	padding: 20px 0;
+}
+.aside-btn{
+	font-size: 20px;
+	padding: 20px 75px;
+	
+}
+/*Blog*/
+.blog-section{
+	background: url(../media/schedule-bg.jpg);
+}
+/*Sechdule*/
+.dates{
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 auto;
+	color: white;
+	
+}
+.dates li{
+	text-align: center;
+	display: inline-block;
+	margin-right: 25px;
+	
+}
