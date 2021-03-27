@@ -73,8 +73,10 @@ body{
     align-items: flex-start;
 }
 .container{
-	max-width: 1000px;
+	max-width: 1100px;
+	width: 100%;
 	margin: 0 auto;
+	
 
 }
 .font-size{
@@ -95,8 +97,16 @@ body{
 	
 }
 .col-2{
-	flex: 0 1 35%;
+	flex: 0 1 30%;
+
 	
+}
+.col-4{
+	flex: 0 1 50%;
+
+}
+.col-3{
+	flex: 0 1 60%;
 }
 .wrap{
 	flex-wrap: wrap;
@@ -160,6 +170,7 @@ strong{
 }
 /*Button*/
 .btn{
+	display: inline-block;
 	padding: 15px 18px;
 	color: white;
 	font-size: 14px;
@@ -170,6 +181,7 @@ strong{
 }
 .btn-secondary{
 	background-color: #f3583d;
+	margin-top: 20px;
 }
 .btn:hover{
 background-color: tomato;
@@ -256,8 +268,8 @@ background-color: tomato;
 }
 /*Aside*/
 .aside{
-	width: 35%;
-	padding: 20px 15px;
+	width: 330px;
+	padding: 30px 15px;
 	box-shadow: 1px 1px 4px  rgba(0,0,0,0.3);
 	border-radius: 4px; 
 	
@@ -267,18 +279,33 @@ background-color: tomato;
 	font-weight: 700;
 	margin-left: 15px;
 }
+.aside-blog{
+	font-size: 25px;
+	font-weight: 700;
+	padding: 20px 0 10px 0;
+}
 .aside-padding{
-	padding: 20px 0;
+	padding-bottom: 30px;
 }
 .aside-btn{
-	font-size: 20px;
-	padding: 20px 75px;
+	font-size: 16px;
+	padding: 25px 82px;
+	border-radius: 4px;
 	
+}
+.margin-left{
+	margin-left: 50px;
 }
 /*Blog*/
 .blog-section{
 	background: url(../media/schedule-bg.jpg);
 }
+.blog-img{
+	width: 100%;
+	border-radius: 4px;
+	
+}
+
 /*Sechdule*/
 .dates{
 	font-size: 18px;
@@ -292,4 +319,68 @@ background-color: tomato;
 	display: inline-block;
 	margin-right: 25px;
 	
+}
+/*Expert*/
+.expert{
+	background-color:#FFFFFF;
+   
+	box-shadow: 1px 1px 4px  rgba(0,0,0,0.3);
+	border-radius: 4px;
+	padding: 40px;
+	
+	margin-right: 30px;
+	
+}
+.expert img{
+	margin-bottom: 10px;
+}
+.expert h5{
+	padding: 10px 0;
+}
+.social i{
+	margin-right: 15px;
+	padding: 20px 0;
+	font-size: 16px;
+}
+/*Contact*/
+.contact-img{
+	width: 100%;
+
+	
+
+	
+}
+.contact{
+	position: relative;
+	
+}
+form{
+	position: absolute;
+	top: 50px;
+ 
+    right: 100px;
+	padding: 25px;
+	background-color: white;
+}
+
+
+.form-control{
+	display: block;
+	width: 100%;
+	padding: 12px 16px;
+	border: 1px solid #DDDDDD;
+	outline: 0;
+	margin-bottom: 20px;
+	
+
+
+}
+/*Footer*/
+small{
+	text-transform: capitalize;
+	font-size: 16px;
+	
+}
+.footer{
+	padding: 50px 0;
 }
