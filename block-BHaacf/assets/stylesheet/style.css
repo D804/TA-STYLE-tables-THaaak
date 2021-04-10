@@ -1,0 +1,499 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*My Resets*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+/*General*/
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.justify {
+  justify-content: flex-start;
+}
+.justify-center{
+	justify-content: center;
+}
+.align {
+  align-items: flex-start;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.font-size {
+  font-size: 0;
+}
+.text-align {
+  text-align: center;
+}
+.text-transform {
+  text-transform: uppercase;
+}
+.text-transform-capital {
+  text-transform: capitalize;
+}
+.col-1 {
+  flex: 0 1 100%;
+}
+.col-2 {
+  flex: 0 1 30%;
+}
+.col-4 {
+  flex: 0 1 50%;
+}
+.flex-47{
+	flex: 0 1 47%;
+}
+.flex-32{
+	flex: 0 1 32%;
+}
+.col-3 {
+  flex: 0 1 60%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.padding {
+  padding: 100px 0;
+}
+.padding-bottom {
+  padding-bottom: 70px;
+}
+.line-img{
+  padding-bottom: 15px;
+}
+
+/*Header*/
+header {
+  background-color: rgb(83, 92, 100);
+  
+}
+.bg-container {
+  opacity: 0.4;
+}
+.bg-video {
+  max-width: 100%;
+
+  position: relative;
+}
+.header-content {
+  position: absolute;
+  top: 0;
+  background-color: rgba(103, 109, 117, 0.5);
+  padding: 20px 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+strong {
+  color: #ed563a;
+}
+/*Nav*/
+
+.navigation a {
+  margin-right: 35px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+}
+.navigation a:hover {
+  color: #ed563a;
+}
+
+.navigation .home {
+  color: #ed563a;
+}
+/*Button*/
+.btn {
+  display: inline-block;
+  padding: 15px 18px;
+  color: white;
+  font-size: 14px;
+}
+.btn-primary {
+  background-color: #ed563a;
+}
+.btn-secondary {
+  background-color: #f3583d;
+ 
+}
+.btn:hover {
+  background-color: tomato;
+}
+.navigation .btn:hover {
+  color: white;
+}
+/*Hero*/
+.hero {
+  position: absolute;
+  top: 350px;
+  left: 400px;
+
+  text-align: center;
+  color: white;
+}
+.hero-subheading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero-heading {
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.hero-btn {
+  background-color: #ed563a;
+}
+/*Program-Section*/
+
+.program-heading {
+  font-size: 25px;
+  padding-bottom: 15px;
+  font-weight: 800;
+}
+.program-container {
+  max-width: 600px;
+
+  margin: 0 auto;
+}
+.program-subheading {
+  font-size: 18px;
+  font-weight: 700;
+}
+.icon {
+  margin: 0 20px;
+}
+.para {
+  font-size: 15px;
+  color: #7c7c7c;
+  padding: 5px 0;
+}
+.program-link {
+  font-size: 14px;
+  font-weight: 600;
+}
+.special-text {
+  color: blue;
+}
+.program-margin{
+	margin-bottom: 65px;
+}
+
+/*Membership*/
+.membership {
+  background: url(../media/cta-bg.jpg) no-repeat;
+  width: 100%;
+ 
+}
+.membership-container {
+  color: white;
+}
+.membership-header {
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.member-para {
+ margin-bottom: 20px;
+ color: white;
+}
+/*Classes*/
+.aside {
+  width: 330px;
+  padding: 30px 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.aside-text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+.aside-blog {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 0 10px 0;
+}
+.aside-padding {
+  padding-bottom: 30px;
+}
+.aside-btn {
+  font-size: 16px;
+  padding: 25px 0;
+  width: 100%;
+ 
+  border-radius: 4px;
+}
+.margin-left {
+  margin-left: 50px;
+}
+ .classes h6{
+	color: black;
+}
+.classes  h6:hover{
+	color: #f3583d;
+}
+.classes .para{
+	padding-bottom: 20px;
+}
+
+/*Blog*/
+.blog-section {
+  background: url(../media/schedule-bg.jpg);
+  background-size: cover;
+}
+.blog-img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/*Sechdule*/
+.schedule .program-heading{
+  color: white;
+}
+.dates {
+  font-size: 16px;
+  font-weight: 700;
+ padding-bottom: 50px;
+  color: white;
+}
+.dates li {
+  text-align: center;
+ 
+}
+.dates li a{
+  margin-right: 10px;
+}
+.dates span{
+  margin-right: 20px;
+}
+.schedule li a{
+	color: white;
+}
+.schedule .padding-bottom{
+	padding-bottom: 50px;
+}
+.schedule ul a:hover{
+color: #f3583d;
+}
+table{
+	max-width: 1200px;
+	margin: 0 auto;
+	color: white;
+	
+}
+td{
+	border: 1px solid;
+	text-align: center;
+	padding: 40px 40px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/*Expert*/
+.expert {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 40px;
+}
+.expert img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.expert h5 {
+  padding: 10px 0;
+}
+.social i {
+  margin-right: 15px;
+  padding: 20px 0;
+  font-size: 16px;
+  color: black;
+}
+/*Contact*/
+.contact-img {
+  width: 100%;
+}
+
+form {
+  padding: 25px;
+  background-color: white;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 12px 25px;
+  border: 1px solid #dddddd;
+  outline: 0;
+  margin-bottom: 20px;
+}
+.name-form .form-control{
+  padding: 12px 25px;
+}
+.form-container{
+  background: url(../media/contact-bg.jpg)no-repeat;
+  width: 100%;
+}
+fieldset{
+  background-color: white;
+  padding: 40px;
+  border-radius: 4px;
+  margin: 40px;
+}
+.contact .btn{
+  border: 0;
+}
+/*Footer*/
+small {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.footer {
+  padding: 50px 0;
+}
